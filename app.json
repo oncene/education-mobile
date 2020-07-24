@@ -1,0 +1,12 @@
+{
+  "name": "online-education",
+  "displayName": "online-education",
+  "expo": {
+    "name": "online-education",
+    "slug": "online-education",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
