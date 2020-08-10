@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {View, StyleSheet, FlatList} from 'react-native';
-import {Content, List, ListItem, Text} from 'native-base';
+import {ListItem, Text} from 'native-base';
 import TableRow from './TableRow';
-
+import {Context as ThemeContext} from '../../../context/ThemeContext';
 const Table = () => {
   const data = [
     {
@@ -105,20 +105,28 @@ const Table = () => {
     }, */
   ];
 
+  const {state} = useContext(ThemeContext);
+
   return (
     <View style={styles.tableContainer}>
       <ListItem style={{borderBottomWidth: 2}}>
         <View style={{flex: 2}}>
-          <Text style={styles.tableHead}>Name</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            Name
+          </Text>
         </View>
         <View style={{flex: 1}}>
-          <Text style={styles.tableHead}>Status</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            Status
+          </Text>
         </View>
         <View style={{flex: 1}}>
-          <Text style={styles.tableHead}>Score</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            Score
+          </Text>
         </View>
         <View style={{flex: 0.4}}>
-          <Text style={styles.tableHead}></Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}></Text>
         </View>
       </ListItem>
       <FlatList
@@ -130,9 +138,10 @@ const Table = () => {
         renderItem={({item}) => {
           return (
             <View
-              onPress={() =>
+            /* onPress={() =>
                 navigation.navigate('SearchDetail', {id: item.id})
-              }>
+              } */
+            >
               <TableRow data={item} />
             </View>
           );
@@ -140,26 +149,38 @@ const Table = () => {
       />
       <ListItem style={styles.practiceRow}>
         <View style={{flex: 3}}>
-          <Text style={styles.tableHead}>Practices</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            Practices
+          </Text>
         </View>
         <View style={{flex: 1.4}}>
-          <Text style={styles.tableHead}>56.25</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            56.25
+          </Text>
         </View>
       </ListItem>
       <ListItem style={styles.examRow}>
         <View style={{flex: 3}}>
-          <Text style={styles.tableHead}>Exam</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            Exam
+          </Text>
         </View>
         <View style={{flex: 1.4}}>
-          <Text style={styles.tableHead}>65</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            65
+          </Text>
         </View>
       </ListItem>
       <ListItem style={styles.totalRow}>
         <View style={{flex: 3}}>
-          <Text style={styles.tableHead}>Total</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            Total
+          </Text>
         </View>
         <View style={{flex: 1.4}}>
-          <Text style={styles.tableHead}>68.625%</Text>
+          <Text style={[styles.tableHead, {color: state.colors.text01}]}>
+            68.625%
+          </Text>
         </View>
       </ListItem>
     </View>
@@ -172,9 +193,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   tableHead: {
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     fontSize: 17,
-    color: '#838785',
     textAlign: 'left',
     alignSelf: 'stretch',
     marginBottom: -10,

@@ -1,19 +1,26 @@
-import React from 'react';
-import {StyleSheet, View, Text, Button} from 'react-native';
+import React, {useContext} from 'react';
+import {StyleSheet, View, Text} from 'react-native';
 import {ProgressCircle} from 'react-native-svg-charts';
 
+import {Context as ThemeContext} from '../../../context/ThemeContext';
+
 const Points = () => {
+  const {state} = useContext(ThemeContext);
   return (
     <View style={styles.pointsContainer}>
       <ProgressCircle
         style={{height: 150, width: '100%'}}
         progress={0.68}
-        progressColor={'#7c6edb'}
+        progressColor={'#7087FF'}
         strokeWidth={12}
-        cornerRadius={0}>
+        cornerRadius={1}>
         <View style={styles.progressCircleText}>
-          <Text style={styles.percentage}>68%</Text>
-          <Text style={styles.text}>Points</Text>
+          <Text style={[styles.percentage, {color: state.colors.text01}]}>
+            68%
+          </Text>
+          <Text style={[styles.text, {color: state.colors.text01}]}>
+            Points
+          </Text>
         </View>
       </ProgressCircle>
     </View>
@@ -33,14 +40,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   percentage: {
-    fontSize: 40,
-    fontWeight: 'bold',
-    color: '#838785',
+    fontSize: 35,
+    fontFamily: 'Poppins-Medium',
   },
   text: {
     fontSize: 15,
-    fontWeight: 'bold',
-    color: '#838785',
+    fontFamily: 'Poppins-Bold',
   },
 });
 

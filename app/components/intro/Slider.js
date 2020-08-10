@@ -1,14 +1,19 @@
 import React from 'react';
-import {
-  View,
-  StatusBar,
-  Text,
-  Image,
-  ImageBackground,
-  StyleSheet,
-} from 'react-native';
+import {StatusBar, Text, ImageBackground, StyleSheet} from 'react-native';
+
+import SlideOne from '../../../assets/slide_one.svg';
+import SlideTwo from '../../../assets/slide_two.svg';
+import SlideThree from '../../../assets/slide_three.svg';
 
 const Slider = ({item}) => {
+  var slider =
+    item.key === '1' ? (
+      <SlideOne />
+    ) : item.key === '2' ? (
+      <SlideTwo />
+    ) : (
+      <SlideThree />
+    );
   return (
     <ImageBackground
       source={require('../../../assets/intro_bg.png')}
@@ -27,7 +32,7 @@ const Slider = ({item}) => {
         hidden={false}
         translucent={true}
       />
-      <Image source={item.image} />
+      {slider}
       <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.text}>{item.text}</Text>
     </ImageBackground>
@@ -40,7 +45,7 @@ const styles = StyleSheet.create({
     height: 200,
   },
   text: {
-    fontFamily: 'Poppins',
+    fontFamily: 'Poppins-Regular',
     fontSize: 20,
     lineHeight: 24,
     color: 'black',
@@ -48,9 +53,9 @@ const styles = StyleSheet.create({
     padding: 30,
   },
   title: {
+    fontFamily: 'Poppins-Bold',
     fontSize: 42,
     color: '#334357',
-    fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 16,
   },

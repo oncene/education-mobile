@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {BarChart, XAxis} from 'react-native-svg-charts';
 import * as scale from 'd3-scale';
 
+import {Context as ThemeContext} from '../../../context/ThemeContext';
+
 const Performance = () => {
+  const {state} = useContext(ThemeContext);
   const fill = '#67cfd6';
   const data = [40, 50, 60, 75, 85, 75, 65, 55, 50];
   return (
@@ -24,14 +27,16 @@ const Performance = () => {
         xAccessor={({item}) => item}
         formatLabel={(value, index) => value + '%'}
         svg={{
-          fill: '#838785',
+          fill: state.colors.text01,
           fontSize: 10,
-          fontWeight: 'bold',
+          fontFamily: 'Poppins-Bold',
           originX: 100,
         }}
       />
 
-      <Text style={styles.text}>Performance</Text>
+      <Text style={[styles.text, {color: state.colors.text01}]}>
+        Performance
+      </Text>
     </View>
   );
 };
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     color: '#838785',
     textAlign: 'center',
   },
