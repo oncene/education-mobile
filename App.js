@@ -8,6 +8,8 @@ import Slider from './app/components/intro/Slider';
 import AsyncStorage from '@react-native-community/async-storage';
 
 import {Provider as ThemeProvider} from './app/context/ThemeContext';
+import {Provider as LanguageProvider} from './app/context/LanguageContext';
+
 import {setNavigator} from './app/navigationRef';
 
 const slides = [
@@ -99,13 +101,15 @@ export default () => {
   };
   if (showRealApp) {
     return (
-      <ThemeProvider>
-        <App
-          ref={(navigator) => {
-            setNavigator(navigator);
-          }}
-        />
-      </ThemeProvider>
+      <LanguageProvider>
+        <ThemeProvider>
+          <App
+            ref={(navigator) => {
+              setNavigator(navigator);
+            }}
+          />
+        </ThemeProvider>
+      </LanguageProvider>
     );
   } else {
     return (
