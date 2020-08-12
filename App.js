@@ -8,8 +8,9 @@ import Slider from './app/components/intro/Slider';
 import AsyncStorage from '@react-native-community/async-storage';
 
 import {Provider as ThemeProvider} from './app/context/ThemeContext';
-import {Provider as LanguageProvider} from './app/context/LanguageContext';
+//import {Provider as LanguageProvider} from './app/context/LanguageContext';
 
+import I18n from './app/language/index';
 import {setNavigator} from './app/navigationRef';
 
 const slides = [
@@ -71,7 +72,16 @@ export default () => {
   useEffect(() => {
     getAppIntroStatus();
     setAppIntro();
+    _getUserLanguage();
   }, []);
+
+  const _getUserLanguage = async () => {
+    let languageCode = await AsyncStorage.getItem('USER_LANGUAGE');
+    if (!languageCode) {
+      languageCode = 'en';
+    }
+    I18n.locale = languageCode;
+  };
 
   _renderItem = ({item}) => {
     return <Slider item={item} />;
@@ -101,15 +111,13 @@ export default () => {
   };
   if (showRealApp) {
     return (
-      <LanguageProvider>
-        <ThemeProvider>
-          <App
-            ref={(navigator) => {
-              setNavigator(navigator);
-            }}
-          />
-        </ThemeProvider>
-      </LanguageProvider>
+      <ThemeProvider>
+        <App
+          ref={(navigator) => {
+            setNavigator(navigator);
+          }}
+        />
+      </ThemeProvider>
     );
   } else {
     return (

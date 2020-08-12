@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import TabIcon from './TabIcon';
 import {TabBarRoutes} from '../Routes';
-
+import I18n from '../../language/index';
 import {Context as ThemeContext} from '../../context/ThemeContext';
 
 const TabBarComponent = ({navigation, ...data}) => {
@@ -22,13 +22,13 @@ const TabBarComponent = ({navigation, ...data}) => {
             <Text
               style={{
                 fontFamily: 'Poppins-Light',
-                fontSize: 12,
+                fontSize: 10,
                 color:
                   currentRouteName === key
                     ? state.colors.active
                     : state.colors.sec_accent,
               }}>
-              {key.split(/(?=[A-Z])/)[0]}
+              {I18n.t(key)}
             </Text>
           ) : null}
         </TouchableOpacity>

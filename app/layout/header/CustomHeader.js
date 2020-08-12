@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {StyleSheet, Dimensions} from 'react-native';
 import {Header, Left, Body, Right, Button, Icon, Title} from 'native-base';
 import {Context as ThemeContext} from '../../context/ThemeContext';
-
+import I18n from '../../language/index';
 const CustomHeader = () => {
   const {state} = useContext(ThemeContext);
   return (
@@ -22,7 +22,7 @@ const CustomHeader = () => {
         </Left>
         <Body style={styles.headBody}>
           <Title style={[styles.headText, {color: state.colors.head_text}]}>
-            Ratings
+            {I18n.t('Dashboard.header')}
           </Title>
         </Body>
         <Right style={{flex: 1}}>
