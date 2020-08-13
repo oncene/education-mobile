@@ -10,7 +10,7 @@ export const Theme = {
       pri_accent: '#437CEA',
       sec_accent: '#334357',
       active: '#437CEA',
-      base: '#FFFFFF',
+      base: '#FEFEFE',
       head_text: '#FFFFFF',
       text01: '#334357',
       text02: '#B0BED7',

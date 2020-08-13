@@ -1,6 +1,6 @@
 import React from 'react';
 import {Platform} from 'react-native';
-import {createAppContainer} from 'react-navigation';
+import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 //import createAnimatedSwitchNavigator from 'react-navigation-animated-switch';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
@@ -8,7 +8,31 @@ import {StackRoutes, TabBarRoutes} from './Routes';
 import TabBarComponent from './TabBarComponent';
 import getSlideFromRightTransitionConfig from './Transition';
 
-const MainFlow = createBottomTabNavigator(
+const AuthStack = createStackNavigator(
+  {
+    LoginScreen: {
+      screen: StackRoutes.LoginScreen,
+    },
+    RegisterScreen: {
+      screen: StackRoutes.RegisterScreen,
+    },
+    EmailConfirmationScreen: {
+      screen: StackRoutes.EmailConfirmationScreen,
+    },
+    ResetPasswordScreen: {
+      screen: StackRoutes.ResetPasswordScreen,
+    },
+    ResetPasswordOTP: {
+      screen: StackRoutes.ResetPasswordOTP,
+    },
+    NewPasswordScreen: {
+      screen: StackRoutes.NewPasswordScreen,
+    },
+  },
+  {headerMode: 'none'},
+);
+
+const AppStack = createBottomTabNavigator(
   {
     DashboardScreen: {
       screen: TabBarRoutes.DashboardScreen,
@@ -35,19 +59,12 @@ const MainFlow = createBottomTabNavigator(
       showLabel: true,
     },
     tabBarComponent: (props) => <TabBarComponent {...props} />,
+    transitionConfig:
+      Platform.OS === 'ios' ? undefined : getSlideFromRightTransitionConfig,
   },
 );
 
-/* const AuthStack = createStackNavigator(
-  {
-    LoginScreen: {
-      screen: StackRoutes.LoginScreen,
-    },
-  },
-  {headerMode: 'none'},
-);
-
-const AppStack = createStackNavigator(
+/* const AppStack = createStackNavigator(
   {
     TabNavigator: {
       screen: TabNavigator,
@@ -70,9 +87,9 @@ const AppStack = createStackNavigator(
     transitionConfig:
       Platform.OS === 'ios' ? undefined : getSlideFromRightTransitionConfig,
   },
-);
+); */
 
-const SwitchNavigator = createAnimatedSwitchNavigator(
+const SwitchNavigator = createSwitchNavigator(
   {
     Auth: AuthStack,
     App: AppStack,
@@ -80,8 +97,8 @@ const SwitchNavigator = createAnimatedSwitchNavigator(
   {
     initialRouteName: 'Auth',
   },
-); */
+);
 
-const AppNavigator = createAppContainer(MainFlow);
+const AppNavigator = createAppContainer(SwitchNavigator);
 
 export default AppNavigator;
