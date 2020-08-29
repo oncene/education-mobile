@@ -12,11 +12,12 @@ import {
   Body,
   Right,
   Switch,
-  Picker,
+  
 } from 'native-base';
 import RNRestart from 'react-native-restart';
 import Header from '../../layout/header/Header';
 import {Context as ThemeContext} from '../../context/ThemeContext';
+import {Picker} from '@react-native-community/picker';
 
 const listLanguage = [
   {key: 'en', label: 'English(default)'},

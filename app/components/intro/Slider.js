@@ -32,7 +32,7 @@ const Slider = ({item}) => {
         hidden={false}
         translucent={true}
       />
-      {slider}
+      {/* {slider} */}
       <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.text}>{item.text}</Text>
     </ImageBackground>
