@@ -13,6 +13,7 @@ import {Button, IconButton} from 'react-native-paper';
 import Input from '../../components/Input';
 import {useNavigation} from '@react-navigation/native';
 import {GoogleSignin} from '@react-native-community/google-signin';
+import {LoginManager, AccessToken} from 'react-native-fbsdk';
 import auth from '@react-native-firebase/auth';
 const SignIn = () => {
   const navigation = useNavigation();
@@ -23,10 +24,38 @@ const SignIn = () => {
   const [password, setPassword] = useState(null);
   const [isLoading, setisLoading] = useState(false);
 
+  async function onFacebookButtonPress() {
+    // Attempt login with permissions
+    const result = await LoginManager.logInWithPermissions([
+      'public_profile',
+      'email',
+    ]);
+
+    if (result.isCancelled) {
+      throw 'User cancelled the login process';
+    }
+
+    // Once signed in, get the users AccesToken
+    const data = await AccessToken.getCurrentAccessToken();
+
+    if (!data) {
+      throw 'Something went wrong obtaining access token';
+    }
+
+    // Create a Firebase credential with the AccessToken
+    const facebookCredential = auth.FacebookAuthProvider.credential(
+      data.accessToken,
+    );
+
+    // Sign-in the user with the credential
+    return auth().signInWithCredential(facebookCredential);
+  }
+
   async function onGoogleButtonPress() {
     GoogleSignin.configure({
       webClientId:
-        '751601510102-1jkmca1r6ubfsmgmg787ec7jgoee93ro.apps.googleusercontent.com',});
+        '751601510102-1jkmca1r6ubfsmgmg787ec7jgoee93ro.apps.googleusercontent.com',
+    });
     // Get the users ID token
     const {idToken} = await GoogleSignin.signIn();
 
@@ -45,16 +74,20 @@ const SignIn = () => {
           <Text style={styles.create}>Log in</Text>
           <IconButton
             style={{}}
-            icon="close"  
+            icon="close"
             size={20}
             onPress={() => console.log('Pressed')}
           />
         </View>
 
         <View style={{height: 21}} />
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() =>
+            onFacebookButtonPress().then(() =>
+              console.log('Signed in with Facebook!'),
+            )
+          }>
           <Image
-            onPress={() => console.log('Image')}
             style={styles.logoFacebook}
             source={require('../../../assets/button_facebook_login.png')}
           />
@@ -103,7 +136,7 @@ const SignIn = () => {
         <View style={{height: 21}} />
         <TouchableOpacity onPress={() => navigation.navigate('Forgot')}>
           <Text style={styles.forgot}>Forgot your Password?</Text>
-        <View style={{height: 9}} />
+          <View style={{height: 9}} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
           <Text style={styles.create}>Don't have an account?</Text>
@@ -130,7 +163,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   logoFacebook: {
-    width: '72%',
+    width: '62%',
     height: 45,
     alignSelf: 'center',
   },
@@ -157,10 +190,10 @@ const styles = StyleSheet.create({
     shadowOffset: {width: 0, height: 0},
     shadowRadius: 5,
   },
-  forgot:{
-   alignSelf:'flex-end',
-   marginRight:21,
-   fontWeight:'700',
-   fontSize:18
-  }
+  forgot: {
+    alignSelf: 'flex-end',
+    marginRight: 21,
+    fontWeight: '700',
+    fontSize: 18,
+  },
 });

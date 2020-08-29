@@ -47,7 +47,7 @@ const OtpPassword = () => {
         <View style={{height: 21}} />
 
         <View style={styles.row}>
-          <Text style={styles.create}>Reset Password</Text>
+          <Text style={styles.create}>Confirm Your Mail</Text>
           <IconButton
             style={{}}
             icon="close"
@@ -61,7 +61,7 @@ const OtpPassword = () => {
         </Paragraph>
         <Image
           style={styles.Image}
-          source={require('../../../assets/reset_pswd_otp.png')}
+          source={require('../../../assets/confirm_email.png')}
         />
 
         <View style={{height: 21}} />

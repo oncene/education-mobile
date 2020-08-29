@@ -48,12 +48,77 @@ const Task = () => {
   };
   return (
     <View>
-      <Button onPress={() => navigation.navigate('Intro')}>Intro Slider</Button>
-      <Button onPress={() => navigation.navigate('Find')}>Find your School</Button>
+      <View style={{height: 21}} />
+
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('Intro')}>
+        Intro Slider
+      </Button>
+      <View style={{height: 21}} />
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('Find')}>
+        Find your School
+      </Button>
+      <View style={{height: 21}} />
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('OtpPassword')}>
+        Confirm Your Mail
+      </Button>
+      <View style={{height: 21}} />
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('Reset')}>
+        New Password
+      </Button>
+      <View style={{height: 21}} />
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('Forgot')}>
+        Forgot Password
+      </Button>
+      <View style={{height: 21}} />
+
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('ColabrationScreen')}>
+        ColabrationScreen
+      </Button>
+      <View style={{height: 21}} />
+
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('GroupScreen')}>
+        GroupScreen
+      </Button>
     </View>
   );
 };
 
 export default Task;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  Button: {
+    width: '60%',
+    alignSelf: 'center',
+  },
+  text: {
+    color: '#fff',
+  },
+});
