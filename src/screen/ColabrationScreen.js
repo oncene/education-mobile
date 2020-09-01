@@ -7,7 +7,7 @@ import Colabration from '../components/Colabration'
 const ColabrationScreen = () => {
     return (
         <View>
-              <HeaderComponents title="Colabration" />
+              <HeaderComponents title="Home" />
               <Colabration />
               <Colabration />
               <Colabration />

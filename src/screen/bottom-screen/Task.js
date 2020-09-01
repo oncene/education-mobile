@@ -107,6 +107,15 @@ const Task = () => {
         onPress={() => navigation.navigate('GroupScreen')}>
         GroupScreen
       </Button>
+      <View style={{height: 21}} />
+
+      <Button
+        labelStyle={styles.text}
+        mode="contained"
+        style={styles.Button}
+        onPress={() => navigation.navigate('TeacherScreen')}>
+        Teacher Card
+      </Button>
     </View>
   );
 };
