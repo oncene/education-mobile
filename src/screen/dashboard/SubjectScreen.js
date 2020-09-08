@@ -60,6 +60,7 @@ const SubjectScreen = () => {
           renderItem={({item, index}) => (
             <View key={index} style={{width: '50%', alignSelf: 'center',marginTop:12, borderRadius:9, }}>
               <Card
+              
                 onPress={() => navigation.navigate('GroupScreen')}
                 style={{width:'90%', alignSelf:'center'}}>
                 <Card.Cover

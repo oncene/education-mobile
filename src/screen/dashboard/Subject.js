@@ -108,6 +108,7 @@ export default Subject;
 const styles = StyleSheet.create({
   view: {
     flex: 1,
+
   },
   image: {
     width: 110,
