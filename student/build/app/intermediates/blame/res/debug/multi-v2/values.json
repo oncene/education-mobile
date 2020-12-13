@@ -1,0 +1,226 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\3d092f8aea065d8287602741058e10f3\\play-services-base-17.2.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,17,18,19,20,21,104,105,106,107,108,109,110,111,113,114,115,116,117,118,119,120,121",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "876,966,1046,1136,1226,1306,1387,1467,6537,6642,6823,6948,7055,7235,7358,7474,7744,7932,8037,8218,8343,8518,8666,8729,8791",
+                        "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78",
+                        "endOffsets": "961,1041,1131,1221,1301,1382,1462,1542,6637,6818,6943,7050,7230,7353,7469,7572,7927,8032,8213,8338,8513,8661,8724,8786,8865"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\android\\app\\src\\main\\res\\values\\color.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "24,25",
+                        "startColumns": "4,4",
+                        "startOffsets": "1679,1750",
+                        "endColumns": "70,71",
+                        "endOffsets": "1745,1817"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\ad8bb76711c26404f436e4b2d2734ae4\\jetified-play-services-basement-17.2.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "101,112",
+                        "startColumns": "4,4",
+                        "startOffsets": "6354,7577",
+                        "endColumns": "67,166",
+                        "endOffsets": "6417,7739"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\5bc5c31e1d6af7c75f7b7a0838074017\\play-services-ads-lite-18.1.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "173",
+                        "startColumns": "4",
+                        "startOffsets": "12377",
+                        "endLines": "180",
+                        "endColumns": "8",
+                        "endOffsets": "12770"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "44",
+                        "endOffsets": "56"
+                    },
+                    "to": {
+                        "startLines": "103",
+                        "startColumns": "4",
+                        "startOffsets": "6492",
+                        "endColumns": "44",
+                        "endOffsets": "6532"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\ec10af7259c49ebd434500a2088e621d\\jetified-OneSignal-3.15.3\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "130,131,132,133",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "9712,9883,10046,10127",
+                        "endColumns": "170,162,80,79",
+                        "endOffsets": "9878,10041,10122,10202"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "158",
+                        "startColumns": "4",
+                        "startOffsets": "11438",
+                        "endLines": "161",
+                        "endColumns": "12",
+                        "endOffsets": "11614"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\c0dffb1d2a9f5e03c2943dacc8ab6071\\cardview-1.0.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,10,11,12,13,28,29,30,143,150,152,155",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,627,688,750,812,1965,2024,2081,10706,11120,11184,11310",
+                        "endLines": "2,10,11,12,13,28,29,30,149,151,154,157",
+                        "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12",
+                        "endOffsets": "152,683,745,807,871,2019,2076,2130,11115,11179,11305,11433"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\61d6185791b9ff84c5f32f2be7668449\\jetified-firebase-messaging-20.0.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "123",
+                        "startColumns": "4",
+                        "startOffsets": "9014",
+                        "endColumns": "81",
+                        "endOffsets": "9091"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\893aacea35c28c30dd997a5873b77ccd\\jetified-play-services-ads-18.1.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "135,136,137,138,139,140,141",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "10279,10321,10398,10436,10475,10528,10596",
+                        "endColumns": "41,76,37,38,52,67,38",
+                        "endOffsets": "10316,10393,10431,10470,10523,10591,10630"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "122,124,125,126,127,128,129,134",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "8870,9096,9202,9284,9388,9497,9617,10207",
+                        "endColumns": "143,105,81,103,108,119,94,71",
+                        "endOffsets": "9009,9197,9279,9383,9492,9612,9707,10274"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\21069dcb2d1fb588134db1b620a90ee0\\core-1.3.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "4,5,22,23,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,102,142,162,163,167,168,172,181,182",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "218,290,1547,1616,2135,2205,2273,2345,2415,2476,2550,2623,2684,2745,2807,2871,2933,2994,3062,3162,3222,3288,3361,3430,3487,3539,3601,3673,3749,3814,3873,3932,3992,4052,4112,4172,4232,4292,4352,4412,4472,4532,4591,4651,4711,4771,4831,4891,4951,5011,5071,5131,5191,5250,5310,5370,5429,5488,5547,5606,5665,5724,5759,5794,5849,5912,5967,6025,6082,6132,6193,6250,6284,6319,6422,10635,11619,11736,11937,12047,12248,12775,12847",
+                        "endLines": "4,5,22,23,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,102,142,162,166,167,171,172,181,182",
+                        "endColumns": "71,87,68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,56,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66",
+                        "endOffsets": "285,373,1611,1674,2200,2268,2340,2410,2471,2545,2618,2679,2740,2802,2866,2928,2989,3057,3157,3217,3283,3356,3425,3482,3534,3596,3668,3744,3809,3868,3927,3987,4047,4107,4167,4227,4287,4347,4407,4467,4527,4586,4646,4706,4766,4826,4886,4946,5006,5066,5126,5186,5245,5305,5365,5424,5483,5542,5601,5660,5719,5754,5789,5844,5907,5962,6020,6077,6127,6188,6245,6279,6314,6349,6487,10701,11731,11932,12042,12243,12372,12842,12909"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\a64628babef5646be820bb485b4636be\\browser-1.0.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,26,27",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "378,436,502,565,1822,1893",
+                        "endColumns": "57,65,62,61,70,71",
+                        "endOffsets": "431,497,560,622,1888,1960"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\bb773c793fad377205fde4216b37ffb3\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "3,183",
+                        "startColumns": "4,4",
+                        "startOffsets": "157,12914",
+                        "endLines": "3,185",
+                        "endColumns": "60,12",
+                        "endOffsets": "213,13054"
+                    }
+                }
+            ]
+        }
+    ]
+}

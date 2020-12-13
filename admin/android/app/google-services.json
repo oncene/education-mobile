@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "835753838277",
+    "firebase_url": "https://schooladsmin.firebaseio.com",
+    "project_id": "schooladsmin",
+    "storage_bucket": "schooladsmin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835753838277:android:4fce91cb98e2b286bd12ac",
+        "android_client_info": {
+          "package_name": "com.adminkvr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835753838277-rmcutvjgi4u3lhq84lvhv2h6gt7l3n48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAvfuyb-jQN5DuRz8Piy6e5o0Ghg2pOpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835753838277-rmcutvjgi4u3lhq84lvhv2h6gt7l3n48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

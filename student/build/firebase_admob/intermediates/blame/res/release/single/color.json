@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\firebase_admob\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\945b2c562740275c5863918e5d917557\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\firebase_admob\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\945b2c562740275c5863918e5d917557\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\firebase_admob\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\945b2c562740275c5863918e5d917557\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    }
+]

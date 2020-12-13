@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\geolocator\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\3d092f8aea065d8287602741058e10f3\\play-services-base-17.2.1\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\geolocator\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\3d092f8aea065d8287602741058e10f3\\play-services-base-17.2.1\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\student\\build\\geolocator\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\3d092f8aea065d8287602741058e10f3\\play-services-base-17.2.1\\res\\color\\common_google_signin_btn_tint.xml"
+    }
+]

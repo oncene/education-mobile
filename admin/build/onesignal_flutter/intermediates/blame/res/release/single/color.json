@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\admin\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\392426b53ddc6131dd8dc482b209b593\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\admin\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\392426b53ddc6131dd8dc482b209b593\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\venki\\Desktop\\works\\flutter\\school\\admin\\build\\onesignal_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\venki\\.gradle\\caches\\transforms-2\\files-2.1\\392426b53ddc6131dd8dc482b209b593\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_tint.xml"
+    }
+]
